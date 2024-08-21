@@ -1,0 +1,19 @@
+{
+  "name":"moritz-sauer-13/tableofcontents",
+  "description": "Inhaltsverzeichnis Element",
+  "authors": [
+    {
+      "name":"Tietge GmbH",
+      "email": "ms@tietge.com"
+    }
+  ],
+  "require":{
+    "silverstripe/recipe-cms": "^4 || ^5",
+    "dnadesign/silverstripe-elemental": "^4 || ^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "TableOfContents\\": "src/"
+    }
+  }
+}

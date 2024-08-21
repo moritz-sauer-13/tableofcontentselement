@@ -1,0 +1,6 @@
+---
+Name: TableOfContentsExtensions
+---
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - TableOfContents\Extensions\BaseElementExtension
