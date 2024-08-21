@@ -33,7 +33,10 @@ class TableOfContentsElement extends BaseElement
         if (!$this->getPage()->hasMethod('ElementalArea')) {
             return null;
         }
-        $elements = $this->getPage()->ElementalArea()->Elements()->filter('ShowInMenu', 1);
+        $elements = $this->getPage()->ElementalArea()->Elements()->filter([
+            'ClassName:not' => self::class,
+            'ShowInMenu' => 1
+        ]);
         $this->extend('updateElementsOnPage', $elements);
         return $elements;
     }
