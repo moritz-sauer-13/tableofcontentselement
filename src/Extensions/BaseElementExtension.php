@@ -43,12 +43,4 @@ class BaseElementExtension extends DataExtension
 
         return $menuTitle;
     }
-
-    public function updateExtraClass(&$extraClass)
-    {
-        if($this->owner->ShowInMenu){
-            $extraClass .= ' show-in-menu';
-        }
-        return $extraClass;
-    }
 }
