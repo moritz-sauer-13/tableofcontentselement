@@ -7,7 +7,7 @@
                     <div class="tableofcontents__content">
                         <% loop $ElementsOnPage %>
                             <div class="tableofcontents__item mb-2 mb-md-3">
-                                <a href="#{$Anchor}" class="tableofcontents__link text-decoration-none">
+                                <a href="$Link" class="tableofcontents__link text-decoration-none">
                                     $MenuTitle
                                 </a>
                             </div>
