@@ -36,7 +36,7 @@ class BaseElementExtension extends DataExtension
         }
 
         if(class_exists('Tools\TextFormatter')){
-            $menuTitle = Tools\TextFormatter::cleanedText($menuTitle);
+            $menuTitle = \Tools\TextFormatter::cleanedText($menuTitle);
         }
 
         $this->owner->extend('updateMenuTitle', $menuTitle);
