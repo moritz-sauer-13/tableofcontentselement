@@ -9,6 +9,8 @@ class TableOfContentsElement extends BaseElement
     private static $singular_name = 'Inhaltsverzeichnis';
     private static $plural_name = 'Inhaltsverzeichnisse';
 
+    private static $icon = 'font-icon-list';
+
     private static $defaults = [
         'ShowInMenu' => '0',
     ];
